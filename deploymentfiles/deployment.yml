@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mindcircuit
+  name: first-k8s-project
   labels:
-    app: mindcircuit-app
+    app:first-k8s-project-app
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: mindcircuit-app
+      app: first-k8s-project-app
   template:
     metadata:
       labels:
-        app: mindcircuit-app
+        app: first-k8s-project-app
     spec:
       containers:
-      - name: mindcircuit-container
+      - name: first-k8s-project-app
         image: reddymani0109/first-k8s-project:1.0-17
         ports:
         - containerPort: 8080

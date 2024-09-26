@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: first-k8s-project
   labels:
-    app:first-k8s-project-app
+    app: first-k8s-project-app
 spec:
   replicas: 4
   selector:
